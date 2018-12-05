@@ -31,18 +31,29 @@ public class Game extends javax.swing.JFrame {
 
     public Game() {
         initComponents();
+         initComponents();
         cards.add(new Home(this, cards), "Home");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("macannn.png")).getImage()), "level1");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("raflesnew.png")).getImage()), "level2");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("kinew.png")).getImage()), "level3");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("silanew.png")).getImage()), "level4");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("doktornew.png")).getImage()), "level5");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("jokowinew.png")).getImage()), "level6");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("pulaunew.png")).getImage()), "level7");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("rumahnew.png")).getImage()), "level8");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("tarinew.png")).getImage()), "level9");
-        cards.add(new Puzzle(new ImageIcon(main.class.getResource("masjidnew.png")).getImage()), "level10");
-                //cards.add(new Home().getFrame(), "play");
+        
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("macannn.png")).getImage());
+        cards.add(Puzzle, "level1");
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("raflesnew.png")).getImage());
+        cards.add(Puzzle, "level2");
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("kinew.png")).getImage());
+        cards.add(Puzzle, "level3");
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("silanew.png")).getImage());
+        cards.add(Puzzle, "level4");
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("doktornew.png")).getImage());
+        cards.add(Puzzle, "level5");
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("jokowinew.png")).getImage());
+        cards.add(Puzzle, "level6");
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("pulaunew.png")).getImage());
+        cards.add(Puzzle, "level7");
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("rumahnew.png")).getImage());
+        cards.add(Puzzle, "level8");
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("tarinew.png")).getImage());
+        cards.add(Puzzle, "level9");
+        Puzzle = new Puzzle(new ImageIcon(main.class.getResource("masjidnew.png")).getImage());
+        cards.add(Puzzle, "level10");
         cl = (CardLayout) cards.getLayout();
         cl.show(cards, "Home");
         
